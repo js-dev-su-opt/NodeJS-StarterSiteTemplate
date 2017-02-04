@@ -100,7 +100,7 @@ popd
 :: 2. Run Gulp Task
 IF EXIST "%DEPLOYMENT_SOURCE%\gulpfile.js" (
   pushd "%DEPLOYMENT_SOURCE%"
-  call :ExecuteCmd "%DEPLOYMENT_SOURCE%\node_modules\.bin\gulp" build
+  call :ExecuteCmd node "%DEPLOYMENT_SOURCE%\node_modules\.bin\gulp.js" build
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
