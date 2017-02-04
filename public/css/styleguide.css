@@ -1,0 +1,15 @@
+.styleguide .page-wrap,body{background-color:#fff}
+.styleguide-colors{list-style:none;padding-left:0;display:block}
+.styleguide-colors li{display:inline-block;width:20%;padding:1em}
+.styleguide-colors div{height:40px}
+.green{background-color:#7baf42}
+.abbey{background-color:#55565d}
+.white{background-color:#fff}
+.gallery{background-color:#eee}
+.silverchalice{background-color:#a1a1a1}
+.spunpearl{background-color:#aaaaae}
+.fiord{background-color:#455565}
+.article-highlight,.text-highlight{width:306px;margin-left:13px;margin-right:13px}
+.article-highlight.large,.call-to-action{width:472px}
+.call-to-action{height:375px}
+.group,.highlights{background-color:#55565d}

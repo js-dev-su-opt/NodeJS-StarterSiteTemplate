@@ -1,0 +1,27 @@
+.question {
+	font-style: italic;
+	clear: left;
+	@include zeta;
+}
+
+.answer {
+	margin-left: 2em;
+	margin-bottom: 2em;	
+}
+
+.answer-author {
+  display: none;
+}
+
+@media screen and (min-width: 30em) {
+	.answer-author {
+		display: inline-block;
+	  width: 62px;
+		height: 80px;
+		float: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+		vertical-align: top;
+		margin: 0 1em 0.5em 1em;
+	}
+}

@@ -1,0 +1,97 @@
+.read-my-blog {
+	max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-call-to-action-wrapper {
+	.call-to-action {
+		min-height: 150px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 20em) {
+	.skills-and-focus {
+		display: flex;
+		align-items: center;
+		padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 30em) {
+	.skills-call-to-action-wrapper {
+		display: flex;
+		flex-direction: column;
+
+		> section {
+			flex: 1 50%;	
+		}
+	}
+
+	.me-and-what-i-do-wrapper {
+		display: flex;
+
+		> .article-highlight {
+			margin-right: 0.75rem;
+		}
+
+		> div {
+			margin-left: 0.75rem;
+		}
+
+		> .article-highlight, > div {
+			flex: 1 50%;
+		}
+	}	
+}
+
+@media screen and (min-width: 30em) {
+	.references-wrapper {
+		display: flex;
+		flex-flow: row wrap;
+
+		> section {
+			flex: 1 46%;
+			margin-left: 2%;
+		}
+
+		> section:first-child {
+			margin-left: 0;
+		}
+
+		> section:last-child {
+			flex: 1 100%;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 45em) {
+	.references-wrapper {
+		flex-wrap: nowrap;
+
+		> section {
+			flex: 1 32%;
+			margin-left: 0;
+			margin-right: 2%;
+		}
+
+		> section:first-child {
+			flex: 1 32%;
+			margin-left: 0;
+		}
+
+		> section:last-child {
+			flex: 1 32%;
+			margin-right: 0;
+		}
+	}
+}
+
+.frontpage-testimonial {
+	display: inline-block;
+}

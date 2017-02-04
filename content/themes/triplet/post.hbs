@@ -1,0 +1,42 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+{{> "nav-mobile"}}
+
+<main class="content" role="main">
+    <article class="blog-post {{post_class}}">
+        <header class="image-header ratio-2-1" {{#if image}}style="background-image: url({{image}})"{{/if}}>
+            <h1>{{title}}</h1>
+        </header>
+        <div class="blog-post-content">
+            <div class="blog-post-info">
+                <h2 class="blog-post-info-header blog-post-caption">{{date published_at format="MMMM DD, YYYY"}} | <span>{{tags}}</span></h2>
+                <a href="http://www.triplet.fi/blog/rss/" class="webicon rss small"></a>
+            </div>
+            <div class="blog-post-body">                    
+                {{content}}
+            </div>
+            <div class="blog-post-author">
+                <img  class="blog-post-author-image" src="https://triplet-assets.s3.amazonaws.com/blog_author_tatu_tamminen.jpg" alt="Author Tatu Tamminen" />
+                <div class="blog-post-author-description">
+                    <p class="blog-post-author-description-text">Hi there! I'm Tatu, an independent Web developer; I help clients on building successful SaaS products. If you're interested in freelancing, you should check my email list <a href="https://www.getdrip.com/forms/26836077/submissions/new">How to get started as a freelancer</a>. In my email list, I share private learnings from my own journey, including information about pricing, finding clients, working with the clients, how to get started, etc.
+
+Please don't hesitate to reach out by <a href="mailto:tatu@triplet.fi">sending an email</a> or via Twitter.</p>
+                    <div class="online-presence">
+                        <a href="https://twitter.com/_Tx3" class="webicon twitter"></a>
+                        <a href="https://github.com/ttamminen" class="webicon github"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{> "signup" }}
+        {{> "nav"}}
+    </article>
+</main>
+
+{{/post}}

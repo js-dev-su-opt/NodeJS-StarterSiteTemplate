@@ -1,0 +1,9 @@
+.site-intro {
+	background-color: $t3-white;
+}
+
+.site-intro-image {
+	width: 100%;
+	max-width: 500px;
+	@extend %centered-content;
+}
