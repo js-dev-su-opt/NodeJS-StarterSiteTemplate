@@ -7,9 +7,6 @@ let ghost = require('ghost'),
   parentApp = express(),
   env = process.env.NODE_ENV || 'development';
 
-console.log('PORT: ', process.env.PORT);
-console.log('port: ', process.env.port);
-
 const viewsPath = path.join(process.cwd(), 'views');
 const layoutsPath = path.join(viewsPath, 'layouts');
 
@@ -46,7 +43,7 @@ const forceSsl = (req, res, next) => {
   return next();
 };
 
-parentApp.set('port', (process.env.PORT || 5000));
+parentApp.set('port', (process.env.PORT || 80));
 
 var defaultLayout = path.join(layoutsPath, 'main.hbs');
 parentApp.engine('hbs', hbs.express4({ defaultLayout }));
