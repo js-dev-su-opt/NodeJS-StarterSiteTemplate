@@ -1,6 +1,6 @@
 'use strict';
 
-console.log(provess.env.PORT)
+console.log(process.env.PORT)
 
 let ghost = require('ghost'),
   express = require('express'),
